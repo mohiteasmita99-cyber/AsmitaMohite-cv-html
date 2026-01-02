@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Styled Personal Profile Page</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 </head>
+
 <body>
 
-<style>
+  <style>
     /* General Styles */
     body {
       font-family: Arial, sans-serif;
@@ -19,7 +23,7 @@
       background: linear-gradient(to bottom right, rgb(7, 0, 22), #012835);
       color: #333;
     }
-   
+
     main {
       max-width: 900px;
       margin: 3rem auto;
@@ -27,33 +31,40 @@
       background: linear-gradient(to bottom right, rgb(7, 0, 22), #012835);
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(55, 189, 212, 0.2);
-  
-    
+
+
     }
-    h1, h2 ,h3{
+
+    h1,
+    h2,
+    h3 {
       color: rgb(247, 242, 184);
       text-align: center;
-    
+
     }
-    h1{
-        color: white;
+
+    h1 {
+      color: white;
     }
-     ul, form {
+
+    ul,
+    form {
       margin-top: 1rem;
       color: white;
-    text-align: center; 
+      text-align: center;
     }
 
     /* Flexbox Centering */
-    
+
     /* List Styling */
     ul {
       list-style-type: disc;
       padding-left: 20px;
     }
+
     li {
       margin-bottom: 0.5rem;
-    align-self: start;
+      align-self: start;
     }
 
     /* Form Styling */
@@ -61,25 +72,32 @@
       width: 100%;
       margin-top: 2rem;
     }
+
     label {
       display: block;
       margin: 0.5rem 0 0.2rem;
       font-weight: bold;
-    text-align: left;
-    margin-left: 40px;
+      text-align: left;
+      margin-left: 40px;
     }
-    input, textarea, button {
+
+    input,
+    textarea,
+    button {
       width: 90%;
       padding: 0.8rem;
       margin-bottom: 1rem;
       border: 1px solid #ddd;
       border-radius: 20px;
-    
+
     }
-    input:focus, textarea:focus {
+
+    input:focus,
+    textarea:focus {
       outline: none;
       border-color: #1976d2;
     }
+
     button {
       background-color: #92072a;
       color: white;
@@ -89,350 +107,403 @@
       border: none;
 
       width: 300px;
-    
-      
+
+
     }
+
     button:hover {
       background-color: #680409;
     }
-   /*--education details--*/
 
-    
-    
-   
-    
-    
-     
-  
+    /*--education details--*/
+
+
+
+
+
+
+
+
     .sidebar ul {
-      list-style: none; 
+      list-style: none;
       margin-left: 15%;
       text-align: center;
     }
+
     .sidebar li {
       margin: 1rem 0;
       font-size: 1rem;
 
     }
+
     /* Mobile Layout (768px and below) */
-@media (max-width: 768px) {
-
-    /* Header adjustments for smaller screens */
-    .header-group {
-        height: auto;
-        padding-top: 150px; /* Space for the image */
-    }
-  
-    
-    /*--Project details--*/
-    
-    .sidebarpro {
-      flex: 1;
-      background: linear-gradient(to bottom right, rgb(7, 0, 22), #012835);
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 9px 8px rgb(3, 80, 80);
-      transform: scale(1,1);
-      margin-top: 20px;
-       transition-delay: 2s;
-      transition: 1s;
-      width: 200px;
-      margin-left: 50px;
-
-    
-    }
-    .sidebarpro:hover{
-      transform:scale(1,1.3);
-    }
-    .sidebarpro ul {
-      list-style: none;
-    }
-    .sidebarpro li {
-      margin: 1rem 0;
-      font-size: 1rem;
-    }
-    /*--Skill css--*/
-       
-    .sidebarskill {
-      flex: 1;
-      background-color:rgb(200, 226, 233)e;
-      padding: 1rem;
-      border-radius: 8px;
-      
-    
-    
-    }
-    
-    .sidebarskill ul {
-      list-style: none;
-      
-    }
-    .sidebarskill li {
-      margin: 1rem 0;
-      font-size: 1rem;
-    }
-    
-    .profh3{
-      align-items: center;
-    }
-  /*--home page--*/
-    .containerprof {
-      display: flex;
-      max-width: 1200px;
-      margin: 10px auto;
-      gap: 0.5rem;
-      
-    }
-    .sidebarprof {
-      flex: 1;
-      background-color: #4b021e;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px #4b021e;
-      width: 200px
-    }
-    .sidebarprof ul {
-      list-style: none;
-    }
-    .sidebarprof li {
-      margin: 1rem 0;
-      font-size: 1rem;
-    }
-    
-   
-    img{
-      width: 180px;
-      height: 180px;
-      align-self: center;
-    
-    }
-   
-    .projectdiv{
-     cursor: pointer;
-      color: white;
-      width: 50px;
-      margin-left: 80px;
-    }
-    /*--project name css--*/
-    .projectdiv1{
-     cursor: pointer;
-      color: white;
-      width: 50px;
-      margin-left: 60px;
-    }
-    .projectdiv2{
-     cursor: pointer;
-      color: white;
-      width: 80px;
-      margin-left: 50px;
-    }
-     .h3pro{
-      font-family: "Kalam", cursive;
-                font-weight: 300;
-                font-style: normal;
-                color:white;
-     }
-     
-    /* Media Query for Mobile Devices */
     @media (max-width: 768px) {
-      main {
-        margin: 1rem;
-        padding: 1rem;
+
+      /* Header adjustments for smaller screens */
+      .header-group {
+        height: auto;
+        padding-top: 150px;
+        /* Space for the image */
       }
-    }
-    
-    
+
+
+      /*--Project details--*/
+
+      .sidebarpro {
+        flex: 1;
+        background: linear-gradient(to bottom right, rgb(7, 0, 22), #012835);
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 9px 8px rgb(3, 80, 80);
+        transform: scale(1, 1);
+        margin-top: 20px;
+        transition-delay: 2s;
+        transition: 1s;
+        width: 200px;
+        margin-left: 50px;
+
+
+      }
+
+      .sidebarpro:hover {
+        transform: scale(1, 1.3);
+      }
+
+      .sidebarpro ul {
+        list-style: none;
+      }
+
+      .sidebarpro li {
+        margin: 1rem 0;
+        font-size: 1rem;
+      }
+
+      /*--Skill css--*/
+
+      .sidebarskill {
+        flex: 1;
+        background-color: rgb(200, 226, 233)e;
+        padding: 1rem;
+        border-radius: 8px;
+
+
+
+      }
+
+      .sidebarskill ul {
+        list-style: none;
+
+      }
+
+      .sidebarskill li {
+        margin: 1rem 0;
+        font-size: 1rem;
+      }
+
+      .profh3 {
+        align-items: center;
+      }
+
+      /*--home page--*/
+      .containerprof {
+        display: flex;
+        max-width: 1200px;
+        margin: 10px auto;
+        gap: 0.5rem;
+
+      }
+
+      .sidebarprof {
+        flex: 1;
+        background-color: #4b021e;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px #4b021e;
+        width: 200px
+      }
+
+      .sidebarprof ul {
+        list-style: none;
+      }
+
+      .sidebarprof li {
+        margin: 1rem 0;
+        font-size: 1rem;
+      }
+
+
+      img {
+        width: 180px;
+        height: 180px;
+        align-self: center;
+
+      }
+
+      .projectdiv {
+        cursor: pointer;
+        color: white;
+        width: 50px;
+        margin-left: 80px;
+      }
+
+      /*--project name css--*/
+      .projectdiv1 {
+        cursor: pointer;
+        color: white;
+        width: 50px;
+        margin-left: 60px;
+      }
+
+      .projectdiv2 {
+        cursor: pointer;
+        color: white;
+        width: 80px;
+        margin-left: 50px;
+      }
+
+      .h3pro {
+        font-family: "Kalam", cursive;
+        font-weight: 300;
+        font-style: normal;
+        color: white;
+      }
+
+      /* Media Query for Mobile Devices */
+      @media (max-width: 768px) {
+        main {
+          margin: 1rem;
+          padding: 1rem;
+        }
+      }
   </style>
 
-<main>
-  
-  <!--About me-->
-  <a href="./ResumASM.pdf" download="">
-  <button style="margin-left: 38%;width: 170px;"><i class="fa-solid fa-download"></i> &nbsp;Download CV</button></a>
-  <br><br>
-  <img src="https://img.freepik.com/free-vector/woman-with-braided-hair-illustration_1308-174675.jpg?semt=ais_hybrid&w=740&q=80" alt="" style="  width: 180px;height: 180px;margin-left: 38%;
-  border-radius: 90px;">
-  <br><br>
-  <h2>A S M I T A &nbsp; &nbsp;M O H I T E</h2>
-  <h3>Java Devloper</h3><hr>
-  <br>
-   <h4 style="  color: white;
-      text-align: center;"><i class="fa-solid fa-phone-volume"></i> +918698710788</h4>
-            <h4 style="  color: white;
-      text-align: center;"><i class="fa-solid fa-location-dot"></i>&nbsp; Kadegaon, Dist-Sangli</h4>
-      <h4 style=" color: white;
-      text-align: center;" > <i class="fa-solid fa-envelope"></i>&nbsp; mohiteasmita99e@gmail.com</h4>
-            
-      <h4 style="  color: white;text-align: center;"><i class="fa-brands fa-linkedin"></i></i>&nbsp; linkedin.com/in/Asmita-Mohite</h4> <br><hr>
+  <main>
 
- 
-  <section>
-    <h2><i class="fa-solid fa-briefcase"></i>     About Me</h2>
-    <p style="color: white;">As a recent BCA graduate, I am eager to begin my career in the Technology industry and utilize the skills and knowledge I have gained throughout my studies. I am seeking a challenging and dynamic role where
-       I can contribute to the development of innovative solution and continuously learn and grow as a professional.</p>
-  </section>
-  <br><hr>
-<br>
-  <!--skills-->
-  <section>
-    <h2><i class="fa-duotone fa-solid fa-users-gear" width="50px"height="50px"></i>     Skills</h2>
-    
-    <div class="containerskill" >
-  <!-- Sidebar -->
-  <div class="sidebarskill">
-    <ul>
-      <h3 style="color:white"><i class="fa-duotone fa-solid fa-laptop-medical"></i>   Technical Skills</h3>
-      <button style="background-color: #92072a; color: white; font-weight: bold; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-family: Arial, sans-serif;width: 140px;height: 50px;">
-    Java
-  </button>
-  <button style="background-color: #92072a; color: white; font-weight: bold; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-family: Arial, sans-serif;width: 140px;height: 50px;">
-    HTML,CSS
-  </button>
-  <button style="background-color: #92072a; color: white; font-weight: bold; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-family: Arial, sans-serif;width: 140px;height: 50px;">
-    SQL
-  </button>
-  <button style="background-color: #92072a; color: white; font-weight: bold; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-family: Arial, sans-serif;width: 140px;height: 50px;width: 140px;height: 50px;">
-    Java Script
-  </button>
-    </ul>
-  </div>
-  </div>
-  
-
-  <div class="sidebarskill" >
-    <ul>
-      <h3 style="color:white"><i class="fa-solid fa-user"></i>  Personal Skills</h3>
-      <button style="background-color: #92072a; color: white; font-weight: bold; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-family: Arial, sans-serif;width: 140px;height: 50px;">
-    Problem Solving
-  </button>
-  <button style="background-color:#92072a; color: white; font-weight: bold; padding: 10px 10px; border: none; border-radius: 8px; cursor: pointer; font-family: Arial, sans-serif;width: 140px;height: 50px;">
-    Communication Skill
-  </button>
-  <button style="background-color: #92072a; color: white; font-weight: bold; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-family: Arial, sans-serif;width: 140px;height: 50px;">
-    Time Management
-  </button>
- <button style="background-color: #92072a; color: white; font-weight: bold; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-family: Arial, sans-serif;width: 140px;height: 50px;">
-    Team- <br> work
-  </button>  
-    </ul>
-  </div>
-  </div>
-  </section>
-  <br><hr><br>
-
-  <!--Education Detail-->
-  <section>
-    <h2><i class="fa-solid fa-user-graduate"></i>  Education Details</h2>
-    <br>
-  <div class="container">
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <ul>
-      <h1 style="color:white;text-align: left;"><li ><strong>SSC</strong></li></h1>
-      <li style="color:white; font-weight: bold;text-align: left;">New English School k.Wangi</li>
-      <li style="color: white;text-align: left;">Passout: March-2020</li>
-      <li style="color: white;text-align: left;">Pre: 65.43%</li><hr>
-    </ul>
-  </div>
-  <div class="sidebar">
-    <ul>
-      <h1 style="color: white;text-align: left;"><li><strong>HSC</strong></li></h1>
-      <li style="color:white; font-weight: bold;text-align: left;">Chatrapati Shivaji Junior College, Vaduj</li>
-      <li style="color: white;text-align: left;">Passout: March-2022</li>
-      <li style="color: white;text-align: left;">Pre: 65.43%</li> <hr>
-    </ul>
-  </div>
-  <div class="sidebar">
-    <ul>
-      <h1 style="color:white;text-align: left;"><li><strong>Degree-BCA</strong></li></h1>
-      <li style="color:white; font-weight: bold;text-align: left;">Adarsh College Vita </li>
-      <li style="color: white;text-align: left;">Passout: March-2025</li>
-      <li style="color:white;text-align: left;">Pre:79%</li> 
-    </ul>
-  </div>
-</div>
-</section>
-<br><br><br><hr>
-
-<!--project Detail-->
-<section>
-  <form>
-    <h2><i class="fa-solid fa-code"></i>    Project</h2>
-    <br>
-  
-  <!-- Sidebar -->
-  <div class="sidebarpro">
-    <ul>
-      <strong><h3 class="h3pro">Project 1</h3></strong>
-    </ul>
-    <div class="projectdiv">
-      <h4>HTML</h4>
-      </div>
-    <button style="width: 140px;height: 50px;" ><a href="#" style="color: white;"></a>Live Project</button>
-    <button style="width: 145px;height: 50px ;"><a href="#" style="color: white;"></a>Code</button>
-  </div>
-  <div class="sidebarpro">
-    <ul>
-      <strong><h3 class="h3pro">project 2</h3></strong>
-      <div class="projectdiv1">
-      <h4>Java</h4>
-      </div>
-  <button style="width: 140px;height: 50px;" ><a href="#" style="color: white;"></a>Live Project</button>
-  <button style="width: 140px;height: 50px;"><a href="#" style="color: white;"></a>Code</button>  
-    </ul>
-  </div>
-  <div class="sidebarpro">
-    <ul>
-      <strong><h3 class="h3pro">project 3</h3></strong>
-      <div class="projectdiv2">
-      <h4>. Net</h4>
-      </div>
-  <button style="width: 140px; height: 50px;" ><a href="#" style="color: white;"></a>Live Project</button>
- <a href=""> <button style="width: 140px;height: 50px;">Code</button> </a>
-    </ul>
-  </div>
-
-</form>
-</section>
-<br><br><br><hr><br>
-
-<!--Language-->
-<section>
-    <h2><i class="fa-solid fa-square-envelope"></i>   Language</h2>
-  
-    <ul style="align-items: center;">
-      English
-<br><br>
-    Hindi
+    <!--About me-->
+    <a href="./ResumASM.pdf" download="">
+      <button style="margin-left: 38%;width: 170px;"><i class="fa-solid fa-download"></i> &nbsp;Download CV</button></a>
     <br><br>
-    Marathi  
-    </ul>
-  </section>
-<br><hr><br>
-  <!--Hobbies-->
-   <section>
-    <h2><i class="fa-solid fa-masks-theater"></i>    Hobbies</h2>
-    <p style="color: white;text-align: center;">My Hobbies are writting, Drawing, Coding, Playing outodoor</p>
-  </section>
-<br><hr><br>
-  <!--Contact Me-->
-   <section>
-    <h2><i class="fa-regular fa-message"></i>   Contact Me</h2>
-    <form>
-      <label for="name">Name :</label>
-      <input type="text" id="name" name="name" placeholder="Your name" required>
-      
-      <label for="email">Email :</label>
-      <input type="email" id="email" name="email" placeholder="Your email" required>
-      
-      <label for="message">Message :</label>
-      <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
-      
-      <button type="submit"><a href="#" style="color: white;">Send Message</button>
-    </form>
-  </section>
-  <br><hr><br>
+    <img
+      src="https://img.freepik.com/free-vector/woman-with-braided-hair-illustration_1308-174675.jpg?semt=ais_hybrid&w=740&q=80"
+      alt="" style="  width: 180px;height: 180px;margin-left: 38%;
+  border-radius: 90px;">
+    <br><br>
+    <h2>A S M I T A &nbsp; &nbsp;M O H I T E</h2>
+    <h3>Java Devloper</h3>
+    <hr>
+    <br>
+    <h4 style="  color: white;
+      text-align: center;"><i class="fa-solid fa-phone-volume"></i> +918698710788</h4>
+    <h4 style="  color: white;
+      text-align: center;"><i class="fa-solid fa-location-dot"></i>&nbsp; Kadegaon, Dist-Sangli</h4>
+    <h4 style=" color: white;
+      text-align: center;"> <i class="fa-solid fa-envelope"></i>&nbsp; mohiteasmita99e@gmail.com</h4>
 
-</main>
+    <h4 style="  color: white;text-align: center;"><i class="fa-brands fa-linkedin"></i></i>&nbsp;
+      linkedin.com/in/Asmita-Mohite</h4> <br>
+    <hr>
+
+
+    <section>
+      <h2><i class="fa-solid fa-briefcase"></i> About Me</h2>
+      <p style="color: white;">As a recent BCA graduate, I am eager to begin my career in the Technology industry and
+        utilize the skills and knowledge I have gained throughout my studies. I am seeking a challenging and dynamic
+        role where
+        I can contribute to the development of innovative solution and continuously learn and grow as a professional.
+      </p>
+    </section>
+    <br>
+    <hr>
+    <br>
+    <!--skills-->
+    <section>
+      <h2><i class="fa-duotone fa-solid fa-users-gear" width="50px" height="50px"></i> Skills</h2>
+
+      <div class="containerskill">
+        <!-- Sidebar -->
+        <div class="sidebarskill">
+          <ul>
+            <h3 style="color:white"><i class="fa-duotone fa-solid fa-laptop-medical"></i> Technical Skills</h3>
+            <button
+              style="background-color: #92072a; color: white; font-weight: bold; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-family: Arial, sans-serif;width: 140px;height: 50px;">
+              Java
+            </button>
+            <button
+              style="background-color: #92072a; color: white; font-weight: bold; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-family: Arial, sans-serif;width: 140px;height: 50px;">
+              HTML,CSS
+            </button>
+            <button
+              style="background-color: #92072a; color: white; font-weight: bold; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-family: Arial, sans-serif;width: 140px;height: 50px;">
+              SQL
+            </button>
+            <button
+              style="background-color: #92072a; color: white; font-weight: bold; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-family: Arial, sans-serif;width: 140px;height: 50px;width: 140px;height: 50px;">
+              Java Script
+            </button>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="sidebarskill">
+        <ul>
+          <h3 style="color:white"><i class="fa-solid fa-user"></i> Personal Skills</h3>
+          <button
+            style="background-color: #92072a; color: white; font-weight: bold; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-family: Arial, sans-serif;width: 140px;height: 50px;">
+            Problem Solving
+          </button>
+          <button
+            style="background-color:#92072a; color: white; font-weight: bold; padding: 10px 10px; border: none; border-radius: 8px; cursor: pointer; font-family: Arial, sans-serif;width: 140px;height: 50px;">
+            Communication Skill
+          </button>
+          <button
+            style="background-color: #92072a; color: white; font-weight: bold; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-family: Arial, sans-serif;width: 140px;height: 50px;">
+            Time Management
+          </button>
+          <button
+            style="background-color: #92072a; color: white; font-weight: bold; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-family: Arial, sans-serif;width: 140px;height: 50px;">
+            Team- <br> work
+          </button>
+        </ul>
+      </div>
+      </div>
+    </section>
+    <br>
+    <hr><br>
+
+    <!--Education Detail-->
+    <section>
+      <h2><i class="fa-solid fa-user-graduate"></i> Education Details</h2>
+      <br>
+      <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <ul>
+            <h1 style="color:white;text-align: left;">
+              <li><strong>SSC</strong></li>
+            </h1>
+            <li style="color:white; font-weight: bold;text-align: left;">New English School k.Wangi</li>
+            <li style="color: white;text-align: left;">Passout: March-2020</li>
+            <li style="color: white;text-align: left;">Pre: 65.43%</li>
+            <hr>
+          </ul>
+        </div>
+        <div class="sidebar">
+          <ul>
+            <h1 style="color: white;text-align: left;">
+              <li><strong>HSC</strong></li>
+            </h1>
+            <li style="color:white; font-weight: bold;text-align: left;">Chatrapati Shivaji Junior College, Vaduj</li>
+            <li style="color: white;text-align: left;">Passout: March-2022</li>
+            <li style="color: white;text-align: left;">Pre: 65.43%</li>
+            <hr>
+          </ul>
+        </div>
+        <div class="sidebar">
+          <ul>
+            <h1 style="color:white;text-align: left;">
+              <li><strong>Degree-BCA</strong></li>
+            </h1>
+            <li style="color:white; font-weight: bold;text-align: left;">Adarsh College Vita </li>
+            <li style="color: white;text-align: left;">Passout: March-2025</li>
+            <li style="color:white;text-align: left;">Pre:79%</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <br><br><br>
+    <hr>
+
+    <!--project Detail-->
+    <section>
+      <form>
+        <h2><i class="fa-solid fa-code"></i> Project</h2>
+        <br>
+
+        <!-- Sidebar -->
+        <div class="sidebarpro">
+          <ul>
+            <strong>
+              <h3 class="h3pro">Project 1</h3>
+            </strong>
+          </ul>
+          <div class="projectdiv">
+            <h4>HTML</h4>
+          </div>
+          <button style="width: 140px;height: 50px;"><a href="#" style="color: white;"></a>Live Project</button>
+          <button style="width: 145px;height: 50px ;"><a href="#" style="color: white;"></a>Code</button>
+        </div>
+        <div class="sidebarpro">
+          <ul>
+            <strong>
+              <h3 class="h3pro">project 2</h3>
+            </strong>
+            <div class="projectdiv1">
+              <h4>Protflio</h4>
+            </div>
+            <button style="width: 140px;height: 50px;"><a href="#" style="color: white;"></a>Live Project</button>
+            <button style="width: 140px;height: 50px;"><a href="#" style="color: white;"></a>Code</button>
+          </ul>
+        </div>
+        <div class="sidebarpro">
+          <ul>
+            <strong>
+              <h3 class="h3pro">project 3</h3>
+            </strong>
+            <div class="projectdiv2">
+              <h4>. Net</h4>
+            </div>
+            <button style="width: 140px; height: 50px;"><a href="#" style="color: white;"></a>Live Project</button>
+            <a href=""> <button style="width: 140px;height: 50px;">Code</button> </a>
+          </ul>
+        </div>
+
+      </form>
+    </section>
+    <br><br><br>
+    <hr><br>
+
+    <!--Language-->
+    <section>
+      <h2><i class="fa-solid fa-square-envelope"></i> Language</h2>
+
+      <ul style="align-items: center;">
+        English
+        <br><br>
+        Hindi
+        <br><br>
+        Marathi
+      </ul>
+    </section>
+    <br>
+    <hr><br>
+    <!--Hobbies-->
+    <section>
+      <h2><i class="fa-solid fa-masks-theater"></i> Hobbies</h2>
+      <p style="color: white;text-align: center;">My Hobbies are writting, Drawing, Coding, Playing outodoor</p>
+    </section>
+    <br>
+    <hr><br>
+    <!--Contact Me-->
+    <section>
+      <h2><i class="fa-regular fa-message"></i> Contact Me</h2>
+      <form>
+        <label for="name">Name :</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+
+        <button type="submit"><a href="#" style="color: white;">Send Message</button>
+      </form>
+    </section>
+    <br>
+    <hr><br>
+
+  </main>
 </body>
+
 </html>
